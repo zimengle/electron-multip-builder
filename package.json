@@ -1,0 +1,21 @@
+{
+  "name": "electron-multip-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "node pack.js",
+    "postinstall": "node script/replace.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.8.8",
+    "fs-extra": "^7.0.0",
+    "log4js": "^3.0.6"
+  },
+  "devDependencies": {
+    "asar": "^0.14.5"
+  },
+  "description": ""
+}
