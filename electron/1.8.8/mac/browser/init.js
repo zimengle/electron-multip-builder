@@ -104,7 +104,7 @@ require('./guest-window-manager')
 let packagePath = null
 let packageJson = null
 let searchPaths
-if(process.argv.length >= 2){
+if (process.argv.find(argv => argv.trim() === 'new_electron')) {
     searchPaths = ['default_app.asar','app', 'app.asar']
 }else{
     searchPaths = ['app', 'app.asar','default_app.asar']
